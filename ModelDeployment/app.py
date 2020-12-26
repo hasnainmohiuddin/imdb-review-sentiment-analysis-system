@@ -2,8 +2,6 @@
 from flask import Flask, request, jsonify, render_template
 import pickle
 import numpy as np
-from sklearn.feature_extraction.text import CountVectorizer
-
 
 app = Flask(__name__)
 ada_model = pickle.load(open('./models/ada_trained_model.pkl', 'rb'))
